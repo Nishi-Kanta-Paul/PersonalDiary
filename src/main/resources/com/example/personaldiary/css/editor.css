@@ -1,0 +1,43 @@
+/* Dashboard */
+.root {
+
+    -fx-font-family: "Segoe UI";
+    -fx-pref-width: 1440px;
+    -fx-pref-height: 900px;
+}
+
+.leftPanel {
+    -fx-background-color: linear-gradient(to bottom, rgba(78, 149, 23, 0.8) 0%, #74CCA2 100%);
+}
+
+#newBtn {
+    -fx-cursor: hand;
+    -fx-background-color:  #70B057;
+    -fx-font-size: 24;
+    -fx-background-radius: 50%;
+}
+
+.menuBtn {
+    -fx-background-color: transparent;
+    -fx-pref-width: 300;
+    -fx-text-fill: floralwhite;
+    -fx-font-size: 18;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+}
+.menuBtn:hover{
+    -fx-background-color: #639947;
+}
+
+.active {
+    -fx-background-color: #639947;
+}
+
+.backBtn {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 50%;
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+}

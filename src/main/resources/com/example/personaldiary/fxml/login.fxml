@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personaldiary.MainController">
+ <children>
+          <Button id="decedentRetBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="1029.0" layoutY="35.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="368.0" text="Retrieve Decedent's Diary" textAlignment="CENTER">
+             <opaqueInsets>
+                <Insets />
+             </opaqueInsets>
+          </Button>
+          <ImageView fitHeight="197.0" fitWidth="157.0" layoutX="636.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../img/logo.png" />
+             </image>
+          </ImageView>
+      <Label id="title" fx:id="title" alignment="CENTER" layoutX="-4.0" layoutY="338.0" prefHeight="141.0" prefWidth="1444.0" text="Personal Diary" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="96.0" />
+         </font>
+      </Label>
+      <TextField fx:id="logUserId" alignment="CENTER" layoutX="424.0" layoutY="500.0" prefHeight="57.0" prefWidth="589.0" promptText="Enter Your UserID" styleClass="field" />
+      <PasswordField fx:id="logUserPass" alignment="CENTER" layoutX="425.0" layoutY="592.0" prefHeight="57.0" prefWidth="589.0" promptText="Enter Your Password" styleClass="field" />
+      <Button layoutX="587.0" layoutY="696.0" mnemonicParsing="false" onAction="#login" prefHeight="50.0" prefWidth="254.0" styleClass="ourBtn" text="Login" />
+      <Label fx:id="title1" alignment="CENTER" layoutX="-6.0" layoutY="777.0" prefHeight="38.0" prefWidth="1444.0" text="Don't have an Account?" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="586.0" layoutY="820.0" mnemonicParsing="false" onAction="#toRegister" prefHeight="50.0" prefWidth="254.0" styleClass="ourBtn" text="Register" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="8.0" layoutY="663.0" prefHeight="38.0" prefWidth="1444.0" style="-fx-background-color: red;" text="Error" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+ </children>
+</AnchorPane>
